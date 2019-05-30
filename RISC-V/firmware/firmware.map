@@ -1,0 +1,44 @@
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD C:\Users\SALIER~1\AppData\Local\Temp\ccS0viCQ.o
+LOAD C:\Users\SALIER~1\AppData\Local\Temp\ccusPqZe.o
+
+.memory         0x0000000000000000      0x414
+                0x0000000000000004                . = 0x4
+ *fill*         0x0000000000000000        0x4 
+ *(.init)
+ .init          0x0000000000000004        0xe C:\Users\SALIER~1\AppData\Local\Temp\ccS0viCQ.o
+ *(.text)
+ .text          0x0000000000000012        0x0 C:\Users\SALIER~1\AppData\Local\Temp\ccS0viCQ.o
+ .text          0x0000000000000012      0x364 C:\Users\SALIER~1\AppData\Local\Temp\ccusPqZe.o
+                0x0000000000000012                putc
+                0x0000000000000048                getc
+                0x0000000000000082                puts
+                0x00000000000000b8                memcpy
+                0x0000000000000104                memcmp
+                0x0000000000000160                print_version
+                0x0000000000000184                printhex
+                0x00000000000001fc                printcrlf
+                0x0000000000000216                dump_memory
+                0x000000000000031e                main
+ *(*)
+ .data          0x0000000000000376        0x0 C:\Users\SALIER~1\AppData\Local\Temp\ccS0viCQ.o
+ .bss           0x0000000000000376        0x0 C:\Users\SALIER~1\AppData\Local\Temp\ccS0viCQ.o
+ .rela.init     0x0000000000000376        0x0 C:\Users\SALIER~1\AppData\Local\Temp\ccS0viCQ.o
+ .data          0x0000000000000376        0x0 C:\Users\SALIER~1\AppData\Local\Temp\ccusPqZe.o
+ .bss           0x0000000000000376        0x0 C:\Users\SALIER~1\AppData\Local\Temp\ccusPqZe.o
+ *fill*         0x0000000000000376        0x2 
+ .rodata        0x0000000000000378       0x8a C:\Users\SALIER~1\AppData\Local\Temp\ccusPqZe.o
+ .comment       0x0000000000000402       0x11 C:\Users\SALIER~1\AppData\Local\Temp\ccusPqZe.o
+                                         0x12 (size before relaxing)
+                0x0000000000000414                . = ALIGN (0x4)
+ *fill*         0x0000000000000413        0x1 
+                0x0000000000000414                end = .
+LOAD c:/program files (x86)/rv32imc/bin/../lib/gcc/riscv32-unknown-elf/6.1.0\libgcc.a
+OUTPUT(firmware.elf elf32-littleriscv)

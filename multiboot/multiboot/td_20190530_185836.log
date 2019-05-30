@@ -1,0 +1,1923 @@
+============================================================
+   Tang Dynasty, V4.3.815
+   Copyright:   Shanghai Anlogic Infotech Co., Ltd.
+                2011 - 2021
+   Executable = C:/Anlogic/TD4.3.815/bin/td.exe
+   Built at =   18:48:55 Dec 28 2018
+   Run by =     SalieriNUC
+   Run Date =   Thu May 30 18:58:36 2019
+
+   Run on =     NUC8I7HVK
+============================================================
+RUN-001 : GUI based run...
+RUN-1002 : start command "import_device eagle_s20.db -package QFN88"
+ARC-1001 : Device Initialization.
+ARC-1001 : ---------------------------------------------------------------
+ARC-1001 :            OPTION            |        IO         |   SETTING   
+ARC-1001 : ---------------------------------------------------------------
+ARC-1001 :   cso_b/cclk/mosi/miso/dout  |  P69/P82/P81/P80  |    gpio    
+ARC-1001 :             done             |        P8         |    gpio    
+ARC-1001 :           program_b          |        P67        |  dedicated  
+ARC-1001 :        tdi/tms/tck/tdo       |  P25/P22/P26/P21  |  dedicated  
+ARC-1001 : ---------------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+RUN-1003 : finish command "import_device eagle_s20.db -package QFN88" in  3.376481s wall, 3.375000s user + 0.203125s system = 3.578125s CPU (106.0%)
+
+RUN-1004 : used memory is 154 MB, reserved memory is 134 MB, peak memory is 154 MB
+HDL-1007 : analyze verilog file ../src/led.v
+HDL-1007 : analyze verilog file C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/multiboot/src/led.v
+HDL-1007 : analyze verilog file C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/multiboot/src/led.v
+HDL-1007 : analyze verilog file C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/multiboot/src/led.v
+HDL-5007 WARNING: 'rebootn' is already implicitly declared on line 11 in C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/multiboot/src/led.v(13)
+HDL-8007 ERROR: syntax error near 'parameter' in C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/multiboot/src/led.v(15)
+HDL-8007 ERROR: Verilog 2000 keyword parameter used in incorrect context in C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/multiboot/src/led.v(15)
+HDL-8007 ERROR: 'time1' is not declared in C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/multiboot/src/led.v(35)
+HDL-8007 ERROR: ignore module module due to previous errors in C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/multiboot/src/led.v(54)
+HDL-1007 : Verilog file 'C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/multiboot/src/led.v' ignored due to errors
+HDL-1007 : analyze verilog file C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/multiboot/src/led.v
+HDL-5007 WARNING: 'rebootn' is already implicitly declared on line 11 in C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/multiboot/src/led.v(13)
+HDL-1007 : analyze verilog file C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/multiboot/src/led.v
+HDL-5007 WARNING: 'rebootn' is already implicitly declared on line 11 in C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/multiboot/src/led.v(13)
+HDL-1007 : analyze verilog file C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/multiboot/src/led.v
+HDL-1007 : analyze verilog file ../src/led.v
+RUN-1002 : start command "elaborate -top led"
+HDL-1007 : elaborate module led in C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/multiboot/src/led.v(1)
+HDL-1007 : elaborate module EG_LOGIC_MBOOT(ADDR_SOURCE_SEL="DYNAMIC") in C:/Anlogic/TD4.3.815/arch/eagle_macro.v(110)
+HDL-1200 : Current top model is led
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "write_verilog sch_read.v -sch"
+HDL-1201 : write out verilog file sch_read.v
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file C:/Anlogic/TD4.3.815/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "led"
+SYN-1011 : Flatten model led
+SYN-1014 : Optimize round 1
+SYN-1032 : 105/0 useful/useless nets, 78/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 25 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 80/25 useful/useless nets, 53/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 0 better
+RUN-1002 : start command "report_area -file multiboot_rtl.area"
+RUN-1001 : standard
+IO Statistics
+#IO                     6
+  #input                3
+  #output               3
+  #inout                0
+#MACRO_ADD              2
+#MACRO_EQ               3
+#MACRO_MUX             15
+
+GUI-5001 WARNING: Found no ADC files
+RUN-1002 : start command "export_db multiboot_rtl.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "write_verilog sch_rtl.v -sch"
+HDL-1201 : write out verilog file sch_rtl.v
+RUN-1002 : start command "optimize_gate -packarea multiboot_gate.area"
+RUN-1001 : Open license file C:/Anlogic/TD4.3.815/license/Anlogic.lic
+SYN-2001 : Map 6 IOs to PADs
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2501 : 1 MBOOT to CONFIG
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 86/0 useful/useless nets, 59/0 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 122/0 useful/useless nets, 95/0 useful/useless insts
+SYN-2501 : Optimize round 1, 28 better
+SYN-2501 : Optimize round 2
+SYN-1032 : 122/0 useful/useless nets, 95/0 useful/useless insts
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 2 macro adder
+SYN-1032 : 150/1 useful/useless nets, 123/0 useful/useless insts
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=4, #lut = 25 (2.96), #lev = 3 (2.25)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=4, #lut = 25 (2.96), #lev = 3 (2.25)
+SYN-2581 : Mapping with K=4, #lut = 25 (2.96), #lev = 3 (2.25)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map =   0.00 sec
+SYN-3001 : Mapper mapped 56 instances into 25 LUTs, name keeping = 60%.
+SYN-1001 : Packing top model "led" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 116/0 useful/useless nets, 90/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 30 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 1 carry chain into lslice
+SYN-4007 : Packing 0 adder to BLE ...
+SYN-4008 : Packed 0 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 25 LUT to BLE ...
+SYN-4008 : Packed 25 LUT and 5 SEQ to BLE.
+SYN-4003 : Packing 25 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (25 nodes)...
+SYN-4004 : #1: Packed 8 SEQ (40 nodes)...
+SYN-4005 : Packed 8 SEQ with LUT/SLICE
+SYN-4006 : 14 single LUT's are left
+SYN-4006 : 25 single SEQ's are left
+SYN-4011 : Packing model "led" (AL_USER_NORMAL) with 42/58 primitive instances ...
+SYN-4024 : Net "CLK_IN_pad" drive clk pins.
+SYN-4025 : Tag rtl::Net CLK_IN_pad as clock net
+SYN-4026 : Tagged 1 rtl::Net as clock net
+RUN-1002 : start command "report_area -file multiboot_gate.area"
+RUN-1001 : standard
+IO Statistics
+#IO                     6
+  #input                3
+  #output               3
+  #inout                0
+
+Utilization Statistics
+#lut                   39   out of  19600    0.20%
+#reg                   30   out of  19600    0.15%
+#le                    56
+  #lut only            26   out of     56   46.43%
+  #reg only            17   out of     56   30.36%
+  #lut&reg             13   out of     56   23.21%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                    6   out of    121    4.96%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    0   out of      4    0.00%
+#clknet                 1   out of     16    6.25%
+  #gclk                 0
+
+RUN-1002 : start command "export_db multiboot_gate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "write_verilog sch_gate.v -sch"
+HDL-1201 : write out verilog file sch_gate.v
+RUN-1002 : start command "place"
+RUN-1001 : Open license file C:/Anlogic/TD4.3.815/license/Anlogic.lic
+PHY-3001 : Placer runs in 8 thread(s).
+RUN-1001 : There are total 38 instances
+RUN-1001 : 14 mslices, 15 lslices, 6 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 92 nets
+RUN-1001 : 54 nets have 2 pins
+RUN-1001 : 32 nets have [3 - 5] pins
+RUN-1001 : 3 nets have [6 - 10] pins
+RUN-1001 : 2 nets have [11 - 20] pins
+RUN-1001 : 1 nets have [21 - 99] pins
+PHY-3001 : Initial placement ...
+PHY-3001 : design contains 36 instances, 29 slices, 1 macros(7 instances)
+PHY-3001 : Start timing update ...
+RUN-1002 : start command "start_timer"
+TMR-5001 WARNING: No sdc constraints found while initiating timer.
+TMR-2505 : Start building timing graph for model led.
+TMR-2506 : Build timing graph completely. Port num: 4, tpin num: 263, tnet num: 90, tinst num: 36, tnode num: 326, tedge num: 443.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 18 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2503 : Start to update net delay, extr mode = 2.
+TMR-2504 : Update delay of 90 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 2.
+TMR-3002 : No user constraint, initiate default constraint.
+TMR-1501 : Assign derive clock DeriveClock to 38 clock pins, and constraint 63 relative nodes.
+TMR-3004 : Start mapping sdc constraints, there are 0 constraints in total.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+PHY-3001 : End timing update;  0.030035s wall, 0.031250s user + 0.000000s system = 0.031250s CPU (104.0%)
+
+PHY-3001 : Global placement ...
+PHY-3001 : Initial: Len = 24337.6
+PHY-3001 : Run with size of 4
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.998224
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(1): len = 18818.8, overlap = 0
+PHY-3002 : Step(2): len = 14249.5, overlap = 0
+PHY-3002 : Step(3): len = 11911.5, overlap = 0
+PHY-3002 : Step(4): len = 10267.3, overlap = 0
+PHY-3002 : Step(5): len = 8605.9, overlap = 0
+PHY-3002 : Step(6): len = 7491, overlap = 0
+PHY-3002 : Step(7): len = 6448.3, overlap = 0
+PHY-3002 : Step(8): len = 5885.5, overlap = 0
+PHY-3002 : Step(9): len = 5111.7, overlap = 0
+PHY-3002 : Step(10): len = 4468.5, overlap = 0
+PHY-3002 : Step(11): len = 4007.7, overlap = 0
+PHY-3002 : Step(12): len = 3564.1, overlap = 0
+PHY-3002 : Step(13): len = 2972, overlap = 0
+PHY-3002 : Step(14): len = 2691.3, overlap = 0
+PHY-3002 : Step(15): len = 2463.4, overlap = 0
+PHY-3002 : Step(16): len = 2418.1, overlap = 0
+PHY-3002 : Step(17): len = 2372.5, overlap = 0
+PHY-3002 : Step(18): len = 2294.5, overlap = 0
+PHY-3002 : Step(19): len = 2270.7, overlap = 0
+PHY-3002 : Step(20): len = 2127, overlap = 0
+PHY-3002 : Step(21): len = 2078, overlap = 0
+PHY-3002 : Step(22): len = 2060.8, overlap = 0
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.003221s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-3001 : Run with size of 4
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.998224
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(23): len = 2042.5, overlap = 0
+PHY-3002 : Step(24): len = 2053, overlap = 0
+PHY-3002 : Step(25): len = 2053, overlap = 0
+PHY-3001 : Run with size of 2
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.998224
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(26): len = 2032.9, overlap = 1.25
+PHY-3002 : Step(27): len = 2032.9, overlap = 1.25
+PHY-3002 : Step(28): len = 2030.8, overlap = 1.5
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.013805s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (113.2%)
+
+PHY-3001 : Run with size of 2
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.998224
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(29): len = 2900.7, overlap = 0
+PHY-3002 : Step(30): len = 2625.2, overlap = 0.25
+PHY-3002 : Step(31): len = 2345.1, overlap = 1.5
+PHY-3002 : Step(32): len = 2189.6, overlap = 2
+PHY-3002 : Step(33): len = 2098.2, overlap = 2.5
+PHY-3002 : Step(34): len = 2088, overlap = 2.25
+PHY-3002 : Step(35): len = 2054.4, overlap = 2.5
+PHY-3002 : Step(36): len = 2054.4, overlap = 2.5
+PHY-3002 : Step(37): len = 2043.8, overlap = 2.5
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.005841s wall, 0.015625s user + 0.015625s system = 0.031250s CPU (535.0%)
+
+PHY-3001 : Legalized: Len = 2663.6, Over = 0
+PHY-3001 : Final: Len = 2663.6, Over = 0
+PHY-3001 : Improving timing with driver duplication.
+RUN-1002 : start command "start_timer"
+TMR-5001 WARNING: No sdc constraints found while initiating timer.
+TMR-2505 : Start building timing graph for model led.
+TMR-2506 : Build timing graph completely. Port num: 4, tpin num: 263, tnet num: 90, tinst num: 36, tnode num: 326, tedge num: 443.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 18 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+RUN-1003 : finish command "place" in  1.043307s wall, 1.828125s user + 0.484375s system = 2.312500s CPU (221.7%)
+
+RUN-1004 : used memory is 221 MB, reserved memory is 176 MB, peak memory is 226 MB
+RUN-1002 : start command "route"
+RUN-1001 : Open license file C:/Anlogic/TD4.3.815/license/Anlogic.lic
+PHY-1001 : Pin swapping for better routability
+PHY-1001 : Pin misalignment score is improved from 39 to 29
+PHY-1001 : Pin misalignment score is improved from 29 to 28
+PHY-1001 : Pin misalignment score is improved from 28 to 28
+PHY-1001 : Pin local connectivity score is improved from 6 to 0
+PHY-1001 : Pin misalignment score is improved from 28 to 28
+PHY-1001 : Pin local connectivity score is improved from 0 to 0
+PHY-1001 : End pin swap;  0.007397s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (211.2%)
+
+PHY-1001 : Route runs in 8 thread(s)
+RUN-1001 : There are total 38 instances
+RUN-1001 : 14 mslices, 15 lslices, 6 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 92 nets
+RUN-1001 : 54 nets have 2 pins
+RUN-1001 : 32 nets have [3 - 5] pins
+RUN-1001 : 3 nets have [6 - 10] pins
+RUN-1001 : 2 nets have [11 - 20] pins
+RUN-1001 : 1 nets have [21 - 99] pins
+PHY-1001 : Start global routing ...
+PHY-1001 : Generate routing grids ...
+PHY-1001 : Initialize routing nets ...
+PHY-1001 : Ripup & Reroute ...
+PHY-1002 : len = 2816, over cnt = 7(0%), over = 7, worst = 1
+PHY-1002 : len = 2824, over cnt = 3(0%), over = 4, worst = 2
+PHY-1002 : len = 2824, over cnt = 3(0%), over = 4, worst = 2
+PHY-1002 : len = 2856, over cnt = 2(0%), over = 2, worst = 1
+PHY-1002 : len = 2880, over cnt = 1(0%), over = 1, worst = 1
+PHY-1002 : len = 2880, over cnt = 1(0%), over = 1, worst = 1
+RUN-1002 : start command "start_timer"
+TMR-5001 WARNING: No sdc constraints found while initiating timer.
+TMR-2505 : Start building timing graph for model led.
+TMR-2506 : Build timing graph completely. Port num: 4, tpin num: 263, tnet num: 90, tinst num: 36, tnode num: 326, tedge num: 443.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 18 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+PHY-1001 : Generate timing info.
+TMR-2503 : Start to update net delay, extr mode = 5.
+TMR-2504 : Update delay of 90 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 5.
+TMR-3002 : No user constraint, initiate default constraint.
+TMR-1501 : Assign derive clock DeriveClock to 38 clock pins, and constraint 63 relative nodes.
+TMR-3004 : Start mapping sdc constraints, there are 0 constraints in total.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+PHY-1001 : Optimize timing.
+PHY-1001 : End global routing;  0.085905s wall, 0.078125s user + 0.015625s system = 0.093750s CPU (109.1%)
+
+PHY-1001 : Start detail routing ...
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net CLK_IN_pad will be routed on clock mesh
+PHY-1001 : Detail Route ...
+PHY-1001 : ===== Detail Route Phase 1 =====
+PHY-1001 : Routed 1% nets.
+PHY-1001 :  0.001814s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1002 : len = 1768, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : ===== Detail Route Phase 2 =====
+PHY-1001 : Routed 14% nets.
+PHY-1001 :  0.015428s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (101.3%)
+
+PHY-1002 : len = 2424, over cnt = 1(0%), over = 1, worst = 1
+PHY-1001 : ===== DR Iter 1 =====
+PHY-1001 :  0.006491s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1002 : len = 2424, over cnt = 1(0%), over = 1, worst = 1
+PHY-1001 : ===== DR Iter 2 =====
+PHY-1001 :  0.006787s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (230.2%)
+
+PHY-1002 : len = 2424, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : ===== Detail Route Phase 3 =====
+PHY-1001 : Routed 42% nets.
+PHY-1001 : Routed 50% nets.
+PHY-1001 : Routed 53% nets.
+PHY-1001 : Routed 70% nets.
+PHY-1001 : Routed 84% nets.
+PHY-1001 :  0.214571s wall, 0.250000s user + 0.046875s system = 0.296875s CPU (138.4%)
+
+PHY-1002 : len = 6200, over cnt = 1(0%), over = 1, worst = 1
+PHY-1001 : ===== DR Iter 1 =====
+PHY-1001 :  0.006833s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1002 : len = 6216, over cnt = 0(0%), over = 0, worst = 0
+PHY-1003 : Routed, final wirelength = 6216
+PHY-1001 : 0 feed throughs used by 0 nets
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net CLK_IN_pad will be routed on clock mesh
+PHY-1001 : eco open net = 0
+PHY-1001 : End detail routing;  3.917274s wall, 3.750000s user + 0.453125s system = 4.203125s CPU (107.3%)
+
+PHY-1001 : Routing violations:
+PHY-1001 : End of Routing Violations.
+RUN-1003 : finish command "route" in  4.089874s wall, 3.937500s user + 0.468750s system = 4.406250s CPU (107.7%)
+
+RUN-1004 : used memory is 236 MB, reserved memory is 196 MB, peak memory is 717 MB
+RUN-1002 : start command "report_area -io_info -file multiboot_phy.area"
+RUN-1001 : standard
+IO Statistics
+#IO                     6
+  #input                3
+  #output               3
+  #inout                0
+
+Utilization Statistics
+#lut                   39   out of  19600    0.20%
+#reg                   30   out of  19600    0.15%
+#le                    56
+  #lut only            26   out of     56   46.43%
+  #reg only            17   out of     56   30.36%
+  #lut&reg             13   out of     56   23.21%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                    6   out of    121    4.96%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    0   out of      4    0.00%
+#clknet                 1   out of     16    6.25%
+  #gclk                 0
+
+RUN-1002 : start command "export_db multiboot_pr.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "write_verilog sch_pr.v -sch"
+HDL-1201 : write out verilog file sch_pr.v
+RUN-1002 : start command "bitgen -bit multiboot.bit -version 0X00 -g ucode:00000000000000000000000000000000"
+BIT-1003 : Start to generate bitstream. 
+BIT-1002 : Init instances with 8 threads.
+BIT-1002 : Init instances completely, inst num: 38
+BIT-1002 : Init pips with 8 threads.
+BIT-1002 : Init pips completely, net num: 92, pip num: 525
+BIT-1003 : Multithreading accelaration with 8 threads.
+BIT-1003 : Generate bitstream completely, there are 125 valid insts, and 1543 bits set as '1'.
+BIT-1004 : PLL setting string = 0000
+BIT-1004 : Generate bits file multiboot.bit.
+HDL-1007 : analyze verilog file ../src/led.v
+RUN-1002 : start command "elaborate -top led"
+HDL-1007 : elaborate module led in C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/multiboot/src/led.v(1)
+HDL-1007 : elaborate module EG_LOGIC_MBOOT(ADDR_SOURCE_SEL="DYNAMIC") in C:/Anlogic/TD4.3.815/arch/eagle_macro.v(110)
+HDL-1200 : Current top model is led
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "write_verilog sch_read.v -sch"
+HDL-1201 : write out verilog file sch_read.v
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file C:/Anlogic/TD4.3.815/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "led"
+SYN-1011 : Flatten model led
+SYN-1014 : Optimize round 1
+SYN-1032 : 105/0 useful/useless nets, 78/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 25 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 80/25 useful/useless nets, 53/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 0 better
+RUN-1002 : start command "report_area -file multiboot_rtl.area"
+RUN-1001 : standard
+IO Statistics
+#IO                     6
+  #input                3
+  #output               3
+  #inout                0
+#MACRO_ADD              2
+#MACRO_EQ               3
+#MACRO_MUX             15
+
+RUN-1002 : start command "read_adc io.adc"
+RUN-1002 : start command "set_pin_assignment CLK_IN  LOCATION = P34;  "
+RUN-1002 : start command "set_pin_assignment RGB_LED[2]  LOCATION = P17;  "
+RUN-1002 : start command "set_pin_assignment RGB_LED[1]  LOCATION = P19;  "
+RUN-1002 : start command "set_pin_assignment RGB_LED[0]  LOCATION = P23;  "
+RUN-1002 : start command "set_pin_assignment RST_N  LOCATION = P16;  "
+RUN-1002 : start command "set_pin_assignment keyB  LOCATION = P18;  "
+RUN-1002 : start command "export_db multiboot_rtl.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "write_verilog sch_rtl.v -sch"
+HDL-1201 : write out verilog file sch_rtl.v
+RUN-1002 : start command "optimize_gate -packarea multiboot_gate.area"
+RUN-1001 : Open license file C:/Anlogic/TD4.3.815/license/Anlogic.lic
+SYN-2001 : Map 6 IOs to PADs
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2501 : 1 MBOOT to CONFIG
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 86/0 useful/useless nets, 59/0 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 122/0 useful/useless nets, 95/0 useful/useless insts
+SYN-2501 : Optimize round 1, 28 better
+SYN-2501 : Optimize round 2
+SYN-1032 : 122/0 useful/useless nets, 95/0 useful/useless insts
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 2 macro adder
+SYN-1032 : 150/1 useful/useless nets, 123/0 useful/useless insts
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=4, #lut = 25 (2.96), #lev = 3 (2.25)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=4, #lut = 25 (2.96), #lev = 3 (2.25)
+SYN-2581 : Mapping with K=4, #lut = 25 (2.96), #lev = 3 (2.25)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map =   0.00 sec
+SYN-3001 : Mapper mapped 56 instances into 25 LUTs, name keeping = 60%.
+SYN-1001 : Packing top model "led" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 116/0 useful/useless nets, 90/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 30 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 1 carry chain into lslice
+SYN-4007 : Packing 0 adder to BLE ...
+SYN-4008 : Packed 0 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 25 LUT to BLE ...
+SYN-4008 : Packed 25 LUT and 5 SEQ to BLE.
+SYN-4003 : Packing 25 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (25 nodes)...
+SYN-4004 : #1: Packed 8 SEQ (40 nodes)...
+SYN-4005 : Packed 8 SEQ with LUT/SLICE
+SYN-4006 : 14 single LUT's are left
+SYN-4006 : 25 single SEQ's are left
+SYN-4011 : Packing model "led" (AL_USER_NORMAL) with 42/58 primitive instances ...
+SYN-4024 : Net "CLK_IN_pad" drive clk pins.
+SYN-4025 : Tag rtl::Net CLK_IN_pad as clock net
+SYN-4026 : Tagged 1 rtl::Net as clock net
+RUN-1002 : start command "report_area -file multiboot_gate.area"
+RUN-1001 : standard
+IO Statistics
+#IO                     6
+  #input                3
+  #output               3
+  #inout                0
+
+Utilization Statistics
+#lut                   39   out of  19600    0.20%
+#reg                   30   out of  19600    0.15%
+#le                    56
+  #lut only            26   out of     56   46.43%
+  #reg only            17   out of     56   30.36%
+  #lut&reg             13   out of     56   23.21%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                    6   out of    121    4.96%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    0   out of      4    0.00%
+#clknet                 1   out of     16    6.25%
+  #gclk                 0
+
+RUN-1002 : start command "export_db multiboot_gate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "write_verilog sch_gate.v -sch"
+HDL-1201 : write out verilog file sch_gate.v
+RUN-1002 : start command "place"
+RUN-1001 : Open license file C:/Anlogic/TD4.3.815/license/Anlogic.lic
+PHY-3001 : Placer runs in 8 thread(s).
+RUN-1001 : There are total 38 instances
+RUN-1001 : 14 mslices, 15 lslices, 6 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 92 nets
+RUN-1001 : 54 nets have 2 pins
+RUN-1001 : 32 nets have [3 - 5] pins
+RUN-1001 : 3 nets have [6 - 10] pins
+RUN-1001 : 2 nets have [11 - 20] pins
+RUN-1001 : 1 nets have [21 - 99] pins
+PHY-3001 : Initial placement ...
+PHY-3001 : design contains 36 instances, 29 slices, 1 macros(7 instances)
+PHY-3001 : Start timing update ...
+RUN-1002 : start command "start_timer"
+TMR-5001 WARNING: No sdc constraints found while initiating timer.
+TMR-2505 : Start building timing graph for model led.
+TMR-2506 : Build timing graph completely. Port num: 4, tpin num: 263, tnet num: 90, tinst num: 36, tnode num: 326, tedge num: 443.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 18 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2503 : Start to update net delay, extr mode = 2.
+TMR-2504 : Update delay of 90 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 2.
+TMR-3002 : No user constraint, initiate default constraint.
+TMR-1501 : Assign derive clock DeriveClock to 38 clock pins, and constraint 63 relative nodes.
+TMR-3004 : Start mapping sdc constraints, there are 0 constraints in total.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+PHY-3001 : End timing update;  0.033080s wall, 0.031250s user + 0.015625s system = 0.046875s CPU (141.7%)
+
+PHY-3001 : Global placement ...
+PHY-3001 : Initial: Len = 24184.6
+PHY-3001 : Run with size of 4
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.998224
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(38): len = 18510.5, overlap = 0
+PHY-3002 : Step(39): len = 13801.3, overlap = 0
+PHY-3002 : Step(40): len = 11405.1, overlap = 0
+PHY-3002 : Step(41): len = 9752.4, overlap = 0
+PHY-3002 : Step(42): len = 8063.8, overlap = 0
+PHY-3002 : Step(43): len = 6942.1, overlap = 0
+PHY-3002 : Step(44): len = 5878.5, overlap = 0
+PHY-3002 : Step(45): len = 5330.7, overlap = 0
+PHY-3002 : Step(46): len = 4599.8, overlap = 0
+PHY-3002 : Step(47): len = 4103, overlap = 0
+PHY-3002 : Step(48): len = 3626.5, overlap = 0
+PHY-3002 : Step(49): len = 3319, overlap = 0
+PHY-3002 : Step(50): len = 2835.9, overlap = 0
+PHY-3002 : Step(51): len = 2546.3, overlap = 0
+PHY-3002 : Step(52): len = 2381.4, overlap = 0
+PHY-3002 : Step(53): len = 2330.4, overlap = 0
+PHY-3002 : Step(54): len = 2193.8, overlap = 0
+PHY-3002 : Step(55): len = 2110.9, overlap = 0
+PHY-3002 : Step(56): len = 2060.1, overlap = 0
+PHY-3002 : Step(57): len = 2054.4, overlap = 0
+PHY-3002 : Step(58): len = 2053.8, overlap = 0
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.003398s wall, 0.015625s user + 0.015625s system = 0.031250s CPU (919.7%)
+
+PHY-3001 : Run with size of 4
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.998224
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(59): len = 1997.9, overlap = 0
+PHY-3002 : Step(60): len = 1994.7, overlap = 0
+PHY-3002 : Step(61): len = 1992.4, overlap = 0
+PHY-3002 : Step(62): len = 1973.5, overlap = 0
+PHY-3002 : Step(63): len = 1974.5, overlap = 0
+PHY-3002 : Step(64): len = 1976.2, overlap = 0
+PHY-3002 : Step(65): len = 1966.9, overlap = 0
+PHY-3002 : Step(66): len = 1943, overlap = 0
+PHY-3002 : Step(67): len = 1937.9, overlap = 0
+PHY-3002 : Step(68): len = 1939.4, overlap = 0
+PHY-3002 : Step(69): len = 1936, overlap = 0
+PHY-3002 : Step(70): len = 1929.9, overlap = 0
+PHY-3002 : Step(71): len = 1929.2, overlap = 0
+PHY-3002 : Step(72): len = 1908.2, overlap = 0
+PHY-3002 : Step(73): len = 1905.8, overlap = 0
+PHY-3002 : Step(74): len = 1904.1, overlap = 0
+PHY-3002 : Step(75): len = 1902.5, overlap = 0
+PHY-3002 : Step(76): len = 1885.8, overlap = 0
+PHY-3002 : Step(77): len = 1893.7, overlap = 0
+PHY-3002 : Step(78): len = 1843.4, overlap = 0
+PHY-3002 : Step(79): len = 1847.4, overlap = 0
+PHY-3002 : Step(80): len = 1844.3, overlap = 0
+PHY-3002 : Step(81): len = 1815.7, overlap = 0
+PHY-3002 : Step(82): len = 1808.5, overlap = 0
+PHY-3002 : Step(83): len = 1796.2, overlap = 0
+PHY-3002 : Step(84): len = 1799.1, overlap = 0
+PHY-3002 : Step(85): len = 1798.6, overlap = 0
+PHY-3002 : Step(86): len = 1781.9, overlap = 0
+PHY-3002 : Step(87): len = 1788.5, overlap = 0
+PHY-3002 : Step(88): len = 1790.3, overlap = 0
+PHY-3001 : Run with size of 2
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.998224
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0.00111097
+PHY-3002 : Step(89): len = 1774, overlap = 3
+PHY-3002 : Step(90): len = 1773.4, overlap = 3
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.012188s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (128.2%)
+
+PHY-3001 : Run with size of 2
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.998224
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(91): len = 2511.1, overlap = 0
+PHY-3002 : Step(92): len = 2188.4, overlap = 2
+PHY-3002 : Step(93): len = 1964.1, overlap = 3.5
+PHY-3002 : Step(94): len = 1850.9, overlap = 3.5
+PHY-3002 : Step(95): len = 1819, overlap = 3.75
+PHY-3002 : Step(96): len = 1802.1, overlap = 3.75
+PHY-3001 : :::1::: Try harder cell spreading with beta_ = 0.00138953
+PHY-3002 : Step(97): len = 1789.3, overlap = 3.75
+PHY-3002 : Step(98): len = 1789.3, overlap = 3.75
+PHY-3001 : :::2::: Try harder cell spreading with beta_ = 0.00277905
+PHY-3002 : Step(99): len = 1784.5, overlap = 3.75
+PHY-3002 : Step(100): len = 1784.5, overlap = 3.75
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.004649s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-3001 : Legalized: Len = 2498.6, Over = 0
+PHY-3001 : Final: Len = 2498.6, Over = 0
+PHY-3001 : Improving timing with driver duplication.
+RUN-1002 : start command "start_timer"
+TMR-5001 WARNING: No sdc constraints found while initiating timer.
+TMR-2505 : Start building timing graph for model led.
+TMR-2506 : Build timing graph completely. Port num: 4, tpin num: 263, tnet num: 90, tinst num: 36, tnode num: 326, tedge num: 443.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 18 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+RUN-1003 : finish command "place" in  1.567095s wall, 2.296875s user + 1.015625s system = 3.312500s CPU (211.4%)
+
+RUN-1004 : used memory is 239 MB, reserved memory is 192 MB, peak memory is 717 MB
+RUN-1002 : start command "route"
+RUN-1001 : Open license file C:/Anlogic/TD4.3.815/license/Anlogic.lic
+PHY-1001 : Pin swapping for better routability
+PHY-1001 : Pin misalignment score is improved from 33 to 26
+PHY-1001 : Pin misalignment score is improved from 26 to 26
+PHY-1001 : Pin local connectivity score is improved from 5 to 0
+PHY-1001 : Pin misalignment score is improved from 27 to 27
+PHY-1001 : Pin local connectivity score is improved from 0 to 0
+PHY-1001 : End pin swap;  0.006453s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : Route runs in 8 thread(s)
+RUN-1001 : There are total 38 instances
+RUN-1001 : 14 mslices, 15 lslices, 6 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 92 nets
+RUN-1001 : 54 nets have 2 pins
+RUN-1001 : 32 nets have [3 - 5] pins
+RUN-1001 : 3 nets have [6 - 10] pins
+RUN-1001 : 2 nets have [11 - 20] pins
+RUN-1001 : 1 nets have [21 - 99] pins
+PHY-1001 : Start global routing ...
+PHY-1001 : Generate routing grids ...
+PHY-1001 : Initialize routing nets ...
+PHY-1001 : Ripup & Reroute ...
+PHY-1002 : len = 2472, over cnt = 8(0%), over = 14, worst = 3
+PHY-1002 : len = 2480, over cnt = 7(0%), over = 12, worst = 3
+PHY-1002 : len = 2504, over cnt = 7(0%), over = 10, worst = 2
+PHY-1002 : len = 2656, over cnt = 0(0%), over = 0, worst = 0
+RUN-1002 : start command "start_timer"
+TMR-5001 WARNING: No sdc constraints found while initiating timer.
+TMR-2505 : Start building timing graph for model led.
+TMR-2506 : Build timing graph completely. Port num: 4, tpin num: 263, tnet num: 90, tinst num: 36, tnode num: 326, tedge num: 443.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 18 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+PHY-1001 : Generate timing info.
+TMR-2503 : Start to update net delay, extr mode = 5.
+TMR-2504 : Update delay of 90 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 5.
+TMR-3002 : No user constraint, initiate default constraint.
+TMR-1501 : Assign derive clock DeriveClock to 38 clock pins, and constraint 63 relative nodes.
+TMR-3004 : Start mapping sdc constraints, there are 0 constraints in total.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+PHY-1001 : Optimize timing.
+PHY-1001 : End global routing;  0.072585s wall, 0.078125s user + 0.000000s system = 0.078125s CPU (107.6%)
+
+PHY-1001 : Start detail routing ...
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net CLK_IN_pad will be routed on clock mesh
+PHY-1001 : Detail Route ...
+PHY-1001 : ===== Detail Route Phase 1 =====
+PHY-1001 : Routed 1% nets.
+PHY-1001 :  0.001970s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1002 : len = 1312, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : ===== Detail Route Phase 2 =====
+PHY-1001 : Routed 15% nets.
+PHY-1001 :  0.014050s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (111.2%)
+
+PHY-1002 : len = 1928, over cnt = 1(0%), over = 1, worst = 1
+PHY-1001 : ===== DR Iter 1 =====
+PHY-1001 :  0.007040s wall, 0.062500s user + 0.000000s system = 0.062500s CPU (887.8%)
+
+PHY-1002 : len = 1928, over cnt = 1(0%), over = 1, worst = 1
+PHY-1001 : ===== DR Iter 2 =====
+PHY-1001 :  0.005474s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1002 : len = 1928, over cnt = 1(0%), over = 1, worst = 1
+PHY-1001 : ===== DR Iter 3 =====
+PHY-1001 :  0.006603s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (236.6%)
+
+PHY-1002 : len = 1928, over cnt = 1(0%), over = 1, worst = 1
+PHY-1001 : ===== DR Iter 4 =====
+PHY-1001 :  0.005952s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1002 : len = 1928, over cnt = 1(0%), over = 1, worst = 1
+PHY-1001 : ===== DR Iter 5 =====
+PHY-1001 :  0.007286s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1002 : len = 1928, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : ===== Detail Route Phase 3 =====
+PHY-1001 : Routed 46% nets.
+PHY-1001 : Routed 48% nets.
+PHY-1001 : Routed 56% nets.
+PHY-1001 : Routed 63% nets.
+PHY-1001 : Routed 84% nets.
+PHY-1001 :  0.103984s wall, 0.171875s user + 0.078125s system = 0.250000s CPU (240.4%)
+
+PHY-1002 : len = 5104, over cnt = 0(0%), over = 0, worst = 0
+PHY-1003 : Routed, final wirelength = 5104
+PHY-1001 : 0 feed throughs used by 0 nets
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net CLK_IN_pad will be routed on clock mesh
+PHY-1001 : eco open net = 0
+PHY-1001 : End detail routing;  2.551729s wall, 2.234375s user + 0.500000s system = 2.734375s CPU (107.2%)
+
+PHY-1001 : Routing violations:
+PHY-1001 : End of Routing Violations.
+RUN-1003 : finish command "route" in  2.707577s wall, 2.421875s user + 0.531250s system = 2.953125s CPU (109.1%)
+
+RUN-1004 : used memory is 253 MB, reserved memory is 213 MB, peak memory is 729 MB
+RUN-1002 : start command "report_area -io_info -file multiboot_phy.area"
+RUN-1001 : standard
+IO Statistics
+#IO                     6
+  #input                3
+  #output               3
+  #inout                0
+
+Utilization Statistics
+#lut                   39   out of  19600    0.20%
+#reg                   30   out of  19600    0.15%
+#le                    56
+  #lut only            26   out of     56   46.43%
+  #reg only            17   out of     56   30.36%
+  #lut&reg             13   out of     56   23.21%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                    6   out of    121    4.96%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    0   out of      4    0.00%
+#clknet                 1   out of     16    6.25%
+  #gclk                 0
+
+RUN-1002 : start command "export_db multiboot_pr.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "write_verilog sch_pr.v -sch"
+HDL-1201 : write out verilog file sch_pr.v
+RUN-1002 : start command "bitgen -bit multiboot.bit -version 0X00 -g ucode:00000000000000000000000000000000"
+BIT-1003 : Start to generate bitstream. 
+BIT-1002 : Init instances with 8 threads.
+BIT-1002 : Init instances completely, inst num: 38
+BIT-1002 : Init pips with 8 threads.
+BIT-1002 : Init pips completely, net num: 92, pip num: 506
+BIT-1003 : Multithreading accelaration with 8 threads.
+BIT-1003 : Generate bitstream completely, there are 119 valid insts, and 1506 bits set as '1'.
+BIT-1004 : PLL setting string = 0000
+BIT-1004 : Generate bits file multiboot.bit.
+PRG-9505 ERROR: USB device open error, please re-connect the USB cable!
+PRG-9505 ERROR: USB device open error, please re-connect the USB cable!
+RUN-1002 : start command "download -bit C:\Users\SalieriNUC\Desktop\Github-salieri\SparkRoad-bootloader\RISC-V\hardware\Picorv32\Picorv32.bit -mode program_spi -v -wait 60 -spd 6 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_QFN88
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_QFN88 -m program_spi -bit C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/RISC-V/hardware/Picorv32/Picorv32.bit"
+RUN-1003 : finish command "bit_to_vec -chip EAGLE_S20_QFN88 -m program_spi -bit C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/RISC-V/hardware/Picorv32/Picorv32.bit" in  4.106668s wall, 3.968750s user + 0.187500s system = 4.156250s CPU (101.2%)
+
+RUN-1004 : used memory is 613 MB, reserved memory is 585 MB, peak memory is 729 MB
+RUN-1002 : start command "program_spi -cable 0 -spd 6"
+PRG-9503 ERROR: USB Error: mode_switch Read failed.
+RUN-1003 : finish command "program_spi -cable 0 -spd 6" in  72.983385s wall, 1.234375s user + 0.656250s system = 1.890625s CPU (2.6%)
+
+RUN-1004 : used memory is 617 MB, reserved memory is 588 MB, peak memory is 729 MB
+RUN-1003 : finish command "download -bit C:\Users\SalieriNUC\Desktop\Github-salieri\SparkRoad-bootloader\RISC-V\hardware\Picorv32\Picorv32.bit -mode program_spi -v -wait 60 -spd 6 -sec 64 -cable 0" in  77.507101s wall, 5.203125s user + 0.843750s system = 6.046875s CPU (7.8%)
+
+RUN-1004 : used memory is 617 MB, reserved memory is 588 MB, peak memory is 729 MB
+GUI-8702 ERROR: Download failed!
+PRG-9505 ERROR: USB device open error, please re-connect the USB cable!
+PRG-9505 ERROR: USB device open error, please re-connect the USB cable!
+RUN-1002 : start command "download -bit C:\Users\SalieriNUC\Desktop\Github-salieri\SparkRoad-bootloader\multiboot\multiboot\multiboot.bit -mode program_spi -v -wait 60 -spd 6 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_QFN88
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_QFN88 -m program_spi -bit C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/multiboot/multiboot/multiboot.bit"
+RUN-1003 : finish command "bit_to_vec -chip EAGLE_S20_QFN88 -m program_spi -bit C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/multiboot/multiboot/multiboot.bit" in  4.689053s wall, 4.546875s user + 0.140625s system = 4.687500s CPU (100.0%)
+
+RUN-1004 : used memory is 614 MB, reserved memory is 585 MB, peak memory is 729 MB
+RUN-1002 : start command "program_spi -cable 0 -spd 6"
+RUN-1003 : finish command "program_spi -cable 0 -spd 6" in  107.431628s wall, 2.656250s user + 0.421875s system = 3.078125s CPU (2.9%)
+
+RUN-1004 : used memory is 613 MB, reserved memory is 586 MB, peak memory is 729 MB
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_QFN88 -m verify_spi -bit C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/multiboot/multiboot/multiboot.bit"
+RUN-1002 : start command "program -cable 0 -spd 6"
+RUN-1003 : finish command "program -cable 0 -spd 6" in  6.393735s wall, 0.156250s user + 0.078125s system = 0.234375s CPU (3.7%)
+
+RUN-1004 : used memory is 416 MB, reserved memory is 384 MB, peak memory is 729 MB
+RUN-1002 : start command "program -cable 0 -spd 1"
+RUN-1003 : finish command "download -bit C:\Users\SalieriNUC\Desktop\Github-salieri\SparkRoad-bootloader\multiboot\multiboot\multiboot.bit -mode program_spi -v -wait 60 -spd 6 -sec 64 -cable 0" in  119.686384s wall, 8.296875s user + 0.718750s system = 9.015625s CPU (7.5%)
+
+RUN-1004 : used memory is 275 MB, reserved memory is 230 MB, peak memory is 729 MB
+GUI-1001 : Download success!
+RUN-1002 : start command "download -bit C:\Users\SalieriNUC\Desktop\Github-salieri\SparkRoad-bootloader\RISC-V\hardware\Picorv32\Picorv32.bit -mode multi_boot -v -start_addr 0x0C0000 -spd 6 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_QFN88
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_QFN88 -m multi_boot -bit C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/RISC-V/hardware/Picorv32/Picorv32.bit -start_addr 0C0000"
+RUN-1003 : finish command "bit_to_vec -chip EAGLE_S20_QFN88 -m multi_boot -bit C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/RISC-V/hardware/Picorv32/Picorv32.bit -start_addr 0C0000" in  5.949365s wall, 5.593750s user + 0.359375s system = 5.953125s CPU (100.1%)
+
+RUN-1004 : used memory is 1156 MB, reserved memory is 1150 MB, peak memory is 1293 MB
+RUN-1002 : start command "program_spi -cable 0 -spd 6 -start_addr 0C0000"
+RUN-1003 : finish command "program_spi -cable 0 -spd 6 -start_addr 0C0000" in  109.444288s wall, 12.421875s user + 0.718750s system = 13.140625s CPU (12.0%)
+
+RUN-1004 : used memory is 693 MB, reserved memory is 680 MB, peak memory is 1293 MB
+PRG-2015 : Start to verify spi...
+RUN-1002 : start command "program -cable 0 -spd 6"
+RUN-1003 : finish command "program -cable 0 -spd 6" in  6.469672s wall, 0.265625s user + 0.078125s system = 0.343750s CPU (5.3%)
+
+RUN-1004 : used memory is 752 MB, reserved memory is 743 MB, peak memory is 1293 MB
+RUN-1002 : start command "program -cable 0"
+RUN-1003 : finish command "download -bit C:\Users\SalieriNUC\Desktop\Github-salieri\SparkRoad-bootloader\RISC-V\hardware\Picorv32\Picorv32.bit -mode multi_boot -v -start_addr 0x0C0000 -spd 6 -cable 0" in  122.462000s wall, 18.687500s user + 1.203125s system = 19.890625s CPU (16.2%)
+
+RUN-1004 : used memory is 710 MB, reserved memory is 720 MB, peak memory is 1293 MB
+GUI-1001 : Download success!
+HDL-1007 : analyze verilog file ../src/led.v
+HDL-1007 : analyze verilog file ../src/led.v
+RUN-1002 : start command "elaborate -top led"
+HDL-1007 : elaborate module led in C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/multiboot/src/led.v(1)
+HDL-1007 : elaborate module EG_LOGIC_MBOOT(ADDR_SOURCE_SEL="DYNAMIC") in C:/Anlogic/TD4.3.815/arch/eagle_macro.v(110)
+HDL-1200 : Current top model is led
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "write_verilog sch_read.v -sch"
+HDL-1201 : write out verilog file sch_read.v
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file C:/Anlogic/TD4.3.815/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "led"
+SYN-1011 : Flatten model led
+SYN-1014 : Optimize round 1
+SYN-1032 : 105/0 useful/useless nets, 78/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 25 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 80/25 useful/useless nets, 53/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 0 better
+RUN-1002 : start command "report_area -file multiboot_rtl.area"
+RUN-1001 : standard
+IO Statistics
+#IO                     6
+  #input                3
+  #output               3
+  #inout                0
+#MACRO_ADD              2
+#MACRO_EQ               3
+#MACRO_MUX             15
+
+RUN-1002 : start command "read_adc io.adc"
+RUN-1002 : start command "set_pin_assignment CLK_IN  LOCATION = P34;  "
+RUN-1002 : start command "set_pin_assignment RGB_LED[2]  LOCATION = P17;  "
+RUN-1002 : start command "set_pin_assignment RGB_LED[1]  LOCATION = P19;  "
+RUN-1002 : start command "set_pin_assignment RGB_LED[0]  LOCATION = P23;  "
+RUN-1002 : start command "set_pin_assignment RST_N  LOCATION = P16;  "
+RUN-1002 : start command "set_pin_assignment keyB  LOCATION = P18;  "
+RUN-1002 : start command "export_db multiboot_rtl.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "write_verilog sch_rtl.v -sch"
+HDL-1201 : write out verilog file sch_rtl.v
+RUN-1002 : start command "optimize_gate -packarea multiboot_gate.area"
+RUN-1001 : Open license file C:/Anlogic/TD4.3.815/license/Anlogic.lic
+SYN-2001 : Map 6 IOs to PADs
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2501 : 1 MBOOT to CONFIG
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 86/0 useful/useless nets, 59/0 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 122/0 useful/useless nets, 95/0 useful/useless insts
+SYN-2501 : Optimize round 1, 28 better
+SYN-2501 : Optimize round 2
+SYN-1032 : 122/0 useful/useless nets, 95/0 useful/useless insts
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 2 macro adder
+SYN-1032 : 150/1 useful/useless nets, 123/0 useful/useless insts
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=4, #lut = 25 (2.96), #lev = 3 (2.25)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=4, #lut = 25 (2.96), #lev = 3 (2.25)
+SYN-2581 : Mapping with K=4, #lut = 25 (2.96), #lev = 3 (2.25)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map =   0.00 sec
+SYN-3001 : Mapper mapped 56 instances into 25 LUTs, name keeping = 60%.
+SYN-1001 : Packing top model "led" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 116/0 useful/useless nets, 90/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 30 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 1 carry chain into lslice
+SYN-4007 : Packing 0 adder to BLE ...
+SYN-4008 : Packed 0 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 25 LUT to BLE ...
+SYN-4008 : Packed 25 LUT and 5 SEQ to BLE.
+SYN-4003 : Packing 25 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (25 nodes)...
+SYN-4004 : #1: Packed 8 SEQ (40 nodes)...
+SYN-4005 : Packed 8 SEQ with LUT/SLICE
+SYN-4006 : 14 single LUT's are left
+SYN-4006 : 25 single SEQ's are left
+SYN-4011 : Packing model "led" (AL_USER_NORMAL) with 42/58 primitive instances ...
+SYN-4024 : Net "CLK_IN_pad" drive clk pins.
+SYN-4025 : Tag rtl::Net CLK_IN_pad as clock net
+SYN-4026 : Tagged 1 rtl::Net as clock net
+RUN-1002 : start command "report_area -file multiboot_gate.area"
+RUN-1001 : standard
+IO Statistics
+#IO                     6
+  #input                3
+  #output               3
+  #inout                0
+
+Utilization Statistics
+#lut                   39   out of  19600    0.20%
+#reg                   30   out of  19600    0.15%
+#le                    56
+  #lut only            26   out of     56   46.43%
+  #reg only            17   out of     56   30.36%
+  #lut&reg             13   out of     56   23.21%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                    6   out of    121    4.96%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    0   out of      4    0.00%
+#clknet                 1   out of     16    6.25%
+  #gclk                 0
+
+RUN-1002 : start command "export_db multiboot_gate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "write_verilog sch_gate.v -sch"
+HDL-1201 : write out verilog file sch_gate.v
+RUN-1002 : start command "place"
+RUN-1001 : Open license file C:/Anlogic/TD4.3.815/license/Anlogic.lic
+PHY-3001 : Placer runs in 8 thread(s).
+RUN-1001 : There are total 38 instances
+RUN-1001 : 14 mslices, 15 lslices, 6 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 92 nets
+RUN-1001 : 54 nets have 2 pins
+RUN-1001 : 32 nets have [3 - 5] pins
+RUN-1001 : 3 nets have [6 - 10] pins
+RUN-1001 : 2 nets have [11 - 20] pins
+RUN-1001 : 1 nets have [21 - 99] pins
+PHY-3001 : Initial placement ...
+PHY-3001 : design contains 36 instances, 29 slices, 1 macros(7 instances)
+PHY-3001 : Start timing update ...
+RUN-1002 : start command "start_timer"
+TMR-5001 WARNING: No sdc constraints found while initiating timer.
+TMR-2505 : Start building timing graph for model led.
+TMR-2506 : Build timing graph completely. Port num: 4, tpin num: 263, tnet num: 90, tinst num: 36, tnode num: 326, tedge num: 443.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 18 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2503 : Start to update net delay, extr mode = 2.
+TMR-2504 : Update delay of 90 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 2.
+TMR-3002 : No user constraint, initiate default constraint.
+TMR-1501 : Assign derive clock DeriveClock to 38 clock pins, and constraint 63 relative nodes.
+TMR-3004 : Start mapping sdc constraints, there are 0 constraints in total.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+PHY-3001 : End timing update;  0.029146s wall, 0.046875s user + 0.000000s system = 0.046875s CPU (160.8%)
+
+PHY-3001 : Global placement ...
+PHY-3001 : Initial: Len = 24184.6
+PHY-3001 : Run with size of 4
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.998224
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(101): len = 18510.5, overlap = 0
+PHY-3002 : Step(102): len = 13801.3, overlap = 0
+PHY-3002 : Step(103): len = 11405.1, overlap = 0
+PHY-3002 : Step(104): len = 9752.4, overlap = 0
+PHY-3002 : Step(105): len = 8063.8, overlap = 0
+PHY-3002 : Step(106): len = 6942.1, overlap = 0
+PHY-3002 : Step(107): len = 5878.5, overlap = 0
+PHY-3002 : Step(108): len = 5330.7, overlap = 0
+PHY-3002 : Step(109): len = 4599.8, overlap = 0
+PHY-3002 : Step(110): len = 4103, overlap = 0
+PHY-3002 : Step(111): len = 3626.5, overlap = 0
+PHY-3002 : Step(112): len = 3319, overlap = 0
+PHY-3002 : Step(113): len = 2835.9, overlap = 0
+PHY-3002 : Step(114): len = 2546.3, overlap = 0
+PHY-3002 : Step(115): len = 2381.4, overlap = 0
+PHY-3002 : Step(116): len = 2330.4, overlap = 0
+PHY-3002 : Step(117): len = 2193.8, overlap = 0
+PHY-3002 : Step(118): len = 2110.9, overlap = 0
+PHY-3002 : Step(119): len = 2060.1, overlap = 0
+PHY-3002 : Step(120): len = 2054.4, overlap = 0
+PHY-3002 : Step(121): len = 2053.8, overlap = 0
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.003794s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (411.9%)
+
+PHY-3001 : Run with size of 4
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.998224
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(122): len = 1997.9, overlap = 0
+PHY-3002 : Step(123): len = 1994.7, overlap = 0
+PHY-3002 : Step(124): len = 1992.4, overlap = 0
+PHY-3002 : Step(125): len = 1973.5, overlap = 0
+PHY-3002 : Step(126): len = 1974.5, overlap = 0
+PHY-3002 : Step(127): len = 1976.2, overlap = 0
+PHY-3002 : Step(128): len = 1966.9, overlap = 0
+PHY-3002 : Step(129): len = 1943, overlap = 0
+PHY-3002 : Step(130): len = 1937.9, overlap = 0
+PHY-3002 : Step(131): len = 1939.4, overlap = 0
+PHY-3002 : Step(132): len = 1936, overlap = 0
+PHY-3002 : Step(133): len = 1929.9, overlap = 0
+PHY-3002 : Step(134): len = 1929.2, overlap = 0
+PHY-3002 : Step(135): len = 1908.2, overlap = 0
+PHY-3002 : Step(136): len = 1905.8, overlap = 0
+PHY-3002 : Step(137): len = 1904.1, overlap = 0
+PHY-3002 : Step(138): len = 1902.5, overlap = 0
+PHY-3002 : Step(139): len = 1885.8, overlap = 0
+PHY-3002 : Step(140): len = 1893.7, overlap = 0
+PHY-3002 : Step(141): len = 1843.4, overlap = 0
+PHY-3002 : Step(142): len = 1847.4, overlap = 0
+PHY-3002 : Step(143): len = 1844.3, overlap = 0
+PHY-3002 : Step(144): len = 1815.7, overlap = 0
+PHY-3002 : Step(145): len = 1808.5, overlap = 0
+PHY-3002 : Step(146): len = 1796.2, overlap = 0
+PHY-3002 : Step(147): len = 1799.1, overlap = 0
+PHY-3002 : Step(148): len = 1798.6, overlap = 0
+PHY-3002 : Step(149): len = 1781.9, overlap = 0
+PHY-3002 : Step(150): len = 1788.5, overlap = 0
+PHY-3002 : Step(151): len = 1790.3, overlap = 0
+PHY-3001 : Run with size of 2
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.998224
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0.00111097
+PHY-3002 : Step(152): len = 1774, overlap = 3
+PHY-3002 : Step(153): len = 1773.4, overlap = 3
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.011755s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (132.9%)
+
+PHY-3001 : Run with size of 2
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.998224
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(154): len = 2511.1, overlap = 0
+PHY-3002 : Step(155): len = 2188.4, overlap = 2
+PHY-3002 : Step(156): len = 1964.1, overlap = 3.5
+PHY-3002 : Step(157): len = 1850.9, overlap = 3.5
+PHY-3002 : Step(158): len = 1819, overlap = 3.75
+PHY-3002 : Step(159): len = 1802.1, overlap = 3.75
+PHY-3001 : :::1::: Try harder cell spreading with beta_ = 0.00138953
+PHY-3002 : Step(160): len = 1789.3, overlap = 3.75
+PHY-3002 : Step(161): len = 1789.3, overlap = 3.75
+PHY-3001 : :::2::: Try harder cell spreading with beta_ = 0.00277905
+PHY-3002 : Step(162): len = 1784.5, overlap = 3.75
+PHY-3002 : Step(163): len = 1784.5, overlap = 3.75
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.004487s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-3001 : Legalized: Len = 2498.6, Over = 0
+PHY-3001 : Final: Len = 2498.6, Over = 0
+PHY-3001 : Improving timing with driver duplication.
+RUN-1002 : start command "start_timer"
+TMR-5001 WARNING: No sdc constraints found while initiating timer.
+TMR-2505 : Start building timing graph for model led.
+TMR-2506 : Build timing graph completely. Port num: 4, tpin num: 263, tnet num: 90, tinst num: 36, tnode num: 326, tedge num: 443.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 18 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+RUN-1003 : finish command "place" in  1.605742s wall, 2.093750s user + 1.062500s system = 3.156250s CPU (196.6%)
+
+RUN-1004 : used memory is 700 MB, reserved memory is 710 MB, peak memory is 1293 MB
+RUN-1002 : start command "route"
+RUN-1001 : Open license file C:/Anlogic/TD4.3.815/license/Anlogic.lic
+PHY-1001 : Pin swapping for better routability
+PHY-1001 : Pin misalignment score is improved from 33 to 26
+PHY-1001 : Pin misalignment score is improved from 26 to 26
+PHY-1001 : Pin local connectivity score is improved from 5 to 0
+PHY-1001 : Pin misalignment score is improved from 27 to 27
+PHY-1001 : Pin local connectivity score is improved from 0 to 0
+PHY-1001 : End pin swap;  0.005833s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (267.9%)
+
+PHY-1001 : Route runs in 8 thread(s)
+RUN-1001 : There are total 38 instances
+RUN-1001 : 14 mslices, 15 lslices, 6 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 92 nets
+RUN-1001 : 54 nets have 2 pins
+RUN-1001 : 32 nets have [3 - 5] pins
+RUN-1001 : 3 nets have [6 - 10] pins
+RUN-1001 : 2 nets have [11 - 20] pins
+RUN-1001 : 1 nets have [21 - 99] pins
+PHY-1001 : Start global routing ...
+PHY-1001 : Generate routing grids ...
+PHY-1001 : Initialize routing nets ...
+PHY-1001 : Ripup & Reroute ...
+PHY-1002 : len = 2472, over cnt = 8(0%), over = 14, worst = 3
+PHY-1002 : len = 2480, over cnt = 7(0%), over = 12, worst = 3
+PHY-1002 : len = 2504, over cnt = 7(0%), over = 10, worst = 2
+PHY-1002 : len = 2656, over cnt = 0(0%), over = 0, worst = 0
+RUN-1002 : start command "start_timer"
+TMR-5001 WARNING: No sdc constraints found while initiating timer.
+TMR-2505 : Start building timing graph for model led.
+TMR-2506 : Build timing graph completely. Port num: 4, tpin num: 263, tnet num: 90, tinst num: 36, tnode num: 326, tedge num: 443.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 18 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+PHY-1001 : Generate timing info.
+TMR-2503 : Start to update net delay, extr mode = 5.
+TMR-2504 : Update delay of 90 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 5.
+TMR-3002 : No user constraint, initiate default constraint.
+TMR-1501 : Assign derive clock DeriveClock to 38 clock pins, and constraint 63 relative nodes.
+TMR-3004 : Start mapping sdc constraints, there are 0 constraints in total.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+PHY-1001 : Optimize timing.
+PHY-1001 : End global routing;  0.074581s wall, 0.078125s user + 0.000000s system = 0.078125s CPU (104.8%)
+
+PHY-1001 : Start detail routing ...
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net CLK_IN_pad will be routed on clock mesh
+PHY-1001 : Detail Route ...
+PHY-1001 : ===== Detail Route Phase 1 =====
+PHY-1001 : Routed 1% nets.
+PHY-1001 :  0.001952s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1002 : len = 1312, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : ===== Detail Route Phase 2 =====
+PHY-1001 : Routed 15% nets.
+PHY-1001 :  0.013313s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1002 : len = 1928, over cnt = 1(0%), over = 1, worst = 1
+PHY-1001 : ===== DR Iter 1 =====
+PHY-1001 :  0.007737s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1002 : len = 1928, over cnt = 1(0%), over = 1, worst = 1
+PHY-1001 : ===== DR Iter 2 =====
+PHY-1001 :  0.006313s wall, 0.015625s user + 0.015625s system = 0.031250s CPU (495.0%)
+
+PHY-1002 : len = 1928, over cnt = 1(0%), over = 1, worst = 1
+PHY-1001 : ===== DR Iter 3 =====
+PHY-1001 :  0.005615s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1002 : len = 1928, over cnt = 1(0%), over = 1, worst = 1
+PHY-1001 : ===== DR Iter 4 =====
+PHY-1001 :  0.006117s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1002 : len = 1928, over cnt = 1(0%), over = 1, worst = 1
+PHY-1001 : ===== DR Iter 5 =====
+PHY-1001 :  0.005514s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (283.4%)
+
+PHY-1002 : len = 1928, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : ===== Detail Route Phase 3 =====
+PHY-1001 : Routed 46% nets.
+PHY-1001 : Routed 48% nets.
+PHY-1001 : Routed 56% nets.
+PHY-1001 : Routed 63% nets.
+PHY-1001 : Routed 84% nets.
+PHY-1001 :  0.105666s wall, 0.125000s user + 0.015625s system = 0.140625s CPU (133.1%)
+
+PHY-1002 : len = 5104, over cnt = 0(0%), over = 0, worst = 0
+PHY-1003 : Routed, final wirelength = 5104
+PHY-1001 : 0 feed throughs used by 0 nets
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net CLK_IN_pad will be routed on clock mesh
+PHY-1001 : eco open net = 0
+PHY-1001 : End detail routing;  2.616444s wall, 2.390625s user + 0.296875s system = 2.687500s CPU (102.7%)
+
+PHY-1001 : Routing violations:
+PHY-1001 : End of Routing Violations.
+RUN-1003 : finish command "route" in  2.775033s wall, 2.546875s user + 0.312500s system = 2.859375s CPU (103.0%)
+
+RUN-1004 : used memory is 695 MB, reserved memory is 684 MB, peak memory is 1293 MB
+RUN-1002 : start command "report_area -io_info -file multiboot_phy.area"
+RUN-1001 : standard
+IO Statistics
+#IO                     6
+  #input                3
+  #output               3
+  #inout                0
+
+Utilization Statistics
+#lut                   39   out of  19600    0.20%
+#reg                   30   out of  19600    0.15%
+#le                    56
+  #lut only            26   out of     56   46.43%
+  #reg only            17   out of     56   30.36%
+  #lut&reg             13   out of     56   23.21%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                    6   out of    121    4.96%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    0   out of      4    0.00%
+#clknet                 1   out of     16    6.25%
+  #gclk                 0
+
+RUN-1002 : start command "export_db multiboot_pr.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "write_verilog sch_pr.v -sch"
+HDL-1201 : write out verilog file sch_pr.v
+RUN-1002 : start command "bitgen -bit multiboot.bit -version 0X00 -g ucode:00000000000000000000000000000000"
+BIT-1003 : Start to generate bitstream. 
+BIT-1002 : Init instances with 8 threads.
+BIT-1002 : Init instances completely, inst num: 38
+BIT-1002 : Init pips with 8 threads.
+BIT-1002 : Init pips completely, net num: 92, pip num: 506
+BIT-1003 : Multithreading accelaration with 8 threads.
+BIT-1003 : Generate bitstream completely, there are 119 valid insts, and 1506 bits set as '1'.
+BIT-1004 : PLL setting string = 0000
+BIT-1004 : Generate bits file multiboot.bit.
+RUN-1002 : start command "download -bit C:\Users\SalieriNUC\Desktop\Github-salieri\SparkRoad-bootloader\multiboot\multiboot\multiboot.bit -mode program_spi -v -wait 60 -spd 6 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_QFN88
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_QFN88 -m program_spi -bit C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/multiboot/multiboot/multiboot.bit"
+RUN-1003 : finish command "bit_to_vec -chip EAGLE_S20_QFN88 -m program_spi -bit C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/multiboot/multiboot/multiboot.bit" in  4.410099s wall, 4.296875s user + 0.203125s system = 4.500000s CPU (102.0%)
+
+RUN-1004 : used memory is 634 MB, reserved memory is 620 MB, peak memory is 1293 MB
+RUN-1002 : start command "program_spi -cable 0 -spd 6"
+RUN-1003 : finish command "program_spi -cable 0 -spd 6" in  107.239140s wall, 3.375000s user + 0.406250s system = 3.781250s CPU (3.5%)
+
+RUN-1004 : used memory is 633 MB, reserved memory is 621 MB, peak memory is 1293 MB
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_QFN88 -m verify_spi -bit C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/multiboot/multiboot/multiboot.bit"
+RUN-1002 : start command "program -cable 0 -spd 6"
+RUN-1003 : finish command "program -cable 0 -spd 6" in  6.451365s wall, 0.343750s user + 0.015625s system = 0.359375s CPU (5.6%)
+
+RUN-1004 : used memory is 437 MB, reserved memory is 423 MB, peak memory is 1293 MB
+RUN-1002 : start command "program -cable 0 -spd 1"
+RUN-1003 : finish command "download -bit C:\Users\SalieriNUC\Desktop\Github-salieri\SparkRoad-bootloader\multiboot\multiboot\multiboot.bit -mode program_spi -v -wait 60 -spd 6 -sec 64 -cable 0" in  119.285580s wall, 8.875000s user + 0.781250s system = 9.656250s CPU (8.1%)
+
+RUN-1004 : used memory is 392 MB, reserved memory is 379 MB, peak memory is 1293 MB
+GUI-1001 : Download success!
+RUN-1002 : start command "download -bit C:\Users\SalieriNUC\Desktop\Github-salieri\SparkRoad-bootloader\RISC-V\hardware\Picorv32\Picorv32.bit -mode multi_boot -v -start_addr 0x050000 -spd 6 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_QFN88
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_QFN88 -m multi_boot -bit C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/RISC-V/hardware/Picorv32/Picorv32.bit -start_addr 050000"
+RUN-1003 : finish command "bit_to_vec -chip EAGLE_S20_QFN88 -m multi_boot -bit C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/RISC-V/hardware/Picorv32/Picorv32.bit -start_addr 050000" in  5.269993s wall, 4.953125s user + 0.375000s system = 5.328125s CPU (101.1%)
+
+RUN-1004 : used memory is 1294 MB, reserved memory is 1312 MB, peak memory is 1304 MB
+RUN-1002 : start command "program_spi -cable 0 -spd 6 -start_addr 050000"
+RUN-1003 : finish command "program_spi -cable 0 -spd 6 -start_addr 050000" in  108.773917s wall, 3.953125s user + 0.625000s system = 4.578125s CPU (4.2%)
+
+RUN-1004 : used memory is 742 MB, reserved memory is 743 MB, peak memory is 1304 MB
+PRG-2015 : Start to verify spi...
+RUN-1002 : start command "program -cable 0 -spd 6"
+RUN-1003 : finish command "program -cable 0 -spd 6" in  6.475873s wall, 0.265625s user + 0.031250s system = 0.296875s CPU (4.6%)
+
+RUN-1004 : used memory is 793 MB, reserved memory is 794 MB, peak memory is 1304 MB
+RUN-1002 : start command "program -cable 0"
+RUN-1003 : finish command "download -bit C:\Users\SalieriNUC\Desktop\Github-salieri\SparkRoad-bootloader\RISC-V\hardware\Picorv32\Picorv32.bit -mode multi_boot -v -start_addr 0x050000 -spd 6 -cable 0" in  121.136549s wall, 9.562500s user + 1.062500s system = 10.625000s CPU (8.8%)
+
+RUN-1004 : used memory is 751 MB, reserved memory is 769 MB, peak memory is 1304 MB
+GUI-1001 : Download success!
+HDL-1007 : analyze verilog file ../src/led.v
+HDL-1007 : analyze verilog file ../src/led.v
+RUN-1002 : start command "elaborate -top led"
+HDL-1007 : elaborate module led in C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/multiboot/src/led.v(1)
+HDL-1007 : elaborate module EG_LOGIC_MBOOT(ADDR_SOURCE_SEL="DYNAMIC") in C:/Anlogic/TD4.3.815/arch/eagle_macro.v(110)
+HDL-1200 : Current top model is led
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "write_verilog sch_read.v -sch"
+HDL-1201 : write out verilog file sch_read.v
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file C:/Anlogic/TD4.3.815/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "led"
+SYN-1011 : Flatten model led
+SYN-1014 : Optimize round 1
+SYN-1032 : 105/0 useful/useless nets, 78/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 25 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 80/25 useful/useless nets, 53/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 0 better
+RUN-1002 : start command "report_area -file multiboot_rtl.area"
+RUN-1001 : standard
+IO Statistics
+#IO                     6
+  #input                3
+  #output               3
+  #inout                0
+#MACRO_ADD              2
+#MACRO_EQ               3
+#MACRO_MUX             15
+
+RUN-1002 : start command "read_adc io.adc"
+RUN-1002 : start command "set_pin_assignment CLK_IN  LOCATION = P34;  "
+RUN-1002 : start command "set_pin_assignment RGB_LED[2]  LOCATION = P17;  "
+RUN-1002 : start command "set_pin_assignment RGB_LED[1]  LOCATION = P19;  "
+RUN-1002 : start command "set_pin_assignment RGB_LED[0]  LOCATION = P23;  "
+RUN-1002 : start command "set_pin_assignment RST_N  LOCATION = P16;  "
+RUN-1002 : start command "set_pin_assignment keyB  LOCATION = P18;  "
+RUN-1002 : start command "export_db multiboot_rtl.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "write_verilog sch_rtl.v -sch"
+HDL-1201 : write out verilog file sch_rtl.v
+RUN-1002 : start command "optimize_gate -packarea multiboot_gate.area"
+RUN-1001 : Open license file C:/Anlogic/TD4.3.815/license/Anlogic.lic
+SYN-2001 : Map 6 IOs to PADs
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2501 : 1 MBOOT to CONFIG
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 86/0 useful/useless nets, 59/0 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 122/0 useful/useless nets, 95/0 useful/useless insts
+SYN-2501 : Optimize round 1, 28 better
+SYN-2501 : Optimize round 2
+SYN-1032 : 122/0 useful/useless nets, 95/0 useful/useless insts
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 2 macro adder
+SYN-1032 : 150/1 useful/useless nets, 123/0 useful/useless insts
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=4, #lut = 25 (2.96), #lev = 3 (2.25)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=4, #lut = 25 (2.96), #lev = 3 (2.25)
+SYN-2581 : Mapping with K=4, #lut = 25 (2.96), #lev = 3 (2.25)
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map =   0.00 sec
+SYN-3001 : Mapper mapped 56 instances into 25 LUTs, name keeping = 60%.
+SYN-1001 : Packing top model "led" ...
+SYN-4010 : Pack lib has 28 rtl pack models with 8 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 116/0 useful/useless nets, 90/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 30 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 1 carry chain into lslice
+SYN-4007 : Packing 0 adder to BLE ...
+SYN-4008 : Packed 0 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 25 LUT to BLE ...
+SYN-4008 : Packed 25 LUT and 5 SEQ to BLE.
+SYN-4003 : Packing 25 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (25 nodes)...
+SYN-4004 : #1: Packed 8 SEQ (40 nodes)...
+SYN-4005 : Packed 8 SEQ with LUT/SLICE
+SYN-4006 : 14 single LUT's are left
+SYN-4006 : 25 single SEQ's are left
+SYN-4011 : Packing model "led" (AL_USER_NORMAL) with 42/58 primitive instances ...
+SYN-4024 : Net "CLK_IN_pad" drive clk pins.
+SYN-4025 : Tag rtl::Net CLK_IN_pad as clock net
+SYN-4026 : Tagged 1 rtl::Net as clock net
+RUN-1002 : start command "report_area -file multiboot_gate.area"
+RUN-1001 : standard
+IO Statistics
+#IO                     6
+  #input                3
+  #output               3
+  #inout                0
+
+Utilization Statistics
+#lut                   39   out of  19600    0.20%
+#reg                   30   out of  19600    0.15%
+#le                    56
+  #lut only            26   out of     56   46.43%
+  #reg only            17   out of     56   30.36%
+  #lut&reg             13   out of     56   23.21%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                    6   out of    121    4.96%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    0   out of      4    0.00%
+#clknet                 1   out of     16    6.25%
+  #gclk                 0
+
+RUN-1002 : start command "export_db multiboot_gate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "write_verilog sch_gate.v -sch"
+HDL-1201 : write out verilog file sch_gate.v
+RUN-1002 : start command "place"
+RUN-1001 : Open license file C:/Anlogic/TD4.3.815/license/Anlogic.lic
+PHY-3001 : Placer runs in 8 thread(s).
+RUN-1001 : There are total 38 instances
+RUN-1001 : 14 mslices, 15 lslices, 6 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 92 nets
+RUN-1001 : 54 nets have 2 pins
+RUN-1001 : 32 nets have [3 - 5] pins
+RUN-1001 : 3 nets have [6 - 10] pins
+RUN-1001 : 2 nets have [11 - 20] pins
+RUN-1001 : 1 nets have [21 - 99] pins
+PHY-3001 : Initial placement ...
+PHY-3001 : design contains 36 instances, 29 slices, 1 macros(7 instances)
+PHY-3001 : Start timing update ...
+RUN-1002 : start command "start_timer"
+TMR-5001 WARNING: No sdc constraints found while initiating timer.
+TMR-2505 : Start building timing graph for model led.
+TMR-2506 : Build timing graph completely. Port num: 4, tpin num: 263, tnet num: 90, tinst num: 36, tnode num: 326, tedge num: 443.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 18 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2503 : Start to update net delay, extr mode = 2.
+TMR-2504 : Update delay of 90 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 2.
+TMR-3002 : No user constraint, initiate default constraint.
+TMR-1501 : Assign derive clock DeriveClock to 38 clock pins, and constraint 63 relative nodes.
+TMR-3004 : Start mapping sdc constraints, there are 0 constraints in total.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+PHY-3001 : End timing update;  0.026836s wall, 0.046875s user + 0.000000s system = 0.046875s CPU (174.7%)
+
+PHY-3001 : Global placement ...
+PHY-3001 : Initial: Len = 24184.6
+PHY-3001 : Run with size of 4
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.998224
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(164): len = 18510.5, overlap = 0
+PHY-3002 : Step(165): len = 13801.3, overlap = 0
+PHY-3002 : Step(166): len = 11405.1, overlap = 0
+PHY-3002 : Step(167): len = 9752.4, overlap = 0
+PHY-3002 : Step(168): len = 8063.8, overlap = 0
+PHY-3002 : Step(169): len = 6942.1, overlap = 0
+PHY-3002 : Step(170): len = 5878.5, overlap = 0
+PHY-3002 : Step(171): len = 5330.7, overlap = 0
+PHY-3002 : Step(172): len = 4599.8, overlap = 0
+PHY-3002 : Step(173): len = 4103, overlap = 0
+PHY-3002 : Step(174): len = 3626.5, overlap = 0
+PHY-3002 : Step(175): len = 3319, overlap = 0
+PHY-3002 : Step(176): len = 2835.9, overlap = 0
+PHY-3002 : Step(177): len = 2546.3, overlap = 0
+PHY-3002 : Step(178): len = 2381.4, overlap = 0
+PHY-3002 : Step(179): len = 2330.4, overlap = 0
+PHY-3002 : Step(180): len = 2193.8, overlap = 0
+PHY-3002 : Step(181): len = 2110.9, overlap = 0
+PHY-3002 : Step(182): len = 2060.1, overlap = 0
+PHY-3002 : Step(183): len = 2054.4, overlap = 0
+PHY-3002 : Step(184): len = 2053.8, overlap = 0
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.003437s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-3001 : Run with size of 4
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.998224
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(185): len = 1997.9, overlap = 0
+PHY-3002 : Step(186): len = 1994.7, overlap = 0
+PHY-3002 : Step(187): len = 1992.4, overlap = 0
+PHY-3002 : Step(188): len = 1973.5, overlap = 0
+PHY-3002 : Step(189): len = 1974.5, overlap = 0
+PHY-3002 : Step(190): len = 1976.2, overlap = 0
+PHY-3002 : Step(191): len = 1966.9, overlap = 0
+PHY-3002 : Step(192): len = 1943, overlap = 0
+PHY-3002 : Step(193): len = 1937.9, overlap = 0
+PHY-3002 : Step(194): len = 1939.4, overlap = 0
+PHY-3002 : Step(195): len = 1936, overlap = 0
+PHY-3002 : Step(196): len = 1929.9, overlap = 0
+PHY-3002 : Step(197): len = 1929.2, overlap = 0
+PHY-3002 : Step(198): len = 1908.2, overlap = 0
+PHY-3002 : Step(199): len = 1905.8, overlap = 0
+PHY-3002 : Step(200): len = 1904.1, overlap = 0
+PHY-3002 : Step(201): len = 1902.5, overlap = 0
+PHY-3002 : Step(202): len = 1885.8, overlap = 0
+PHY-3002 : Step(203): len = 1893.7, overlap = 0
+PHY-3002 : Step(204): len = 1843.4, overlap = 0
+PHY-3002 : Step(205): len = 1847.4, overlap = 0
+PHY-3002 : Step(206): len = 1844.3, overlap = 0
+PHY-3002 : Step(207): len = 1815.7, overlap = 0
+PHY-3002 : Step(208): len = 1808.5, overlap = 0
+PHY-3002 : Step(209): len = 1796.2, overlap = 0
+PHY-3002 : Step(210): len = 1799.1, overlap = 0
+PHY-3002 : Step(211): len = 1798.6, overlap = 0
+PHY-3002 : Step(212): len = 1781.9, overlap = 0
+PHY-3002 : Step(213): len = 1788.5, overlap = 0
+PHY-3002 : Step(214): len = 1790.3, overlap = 0
+PHY-3001 : Run with size of 2
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.998224
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0.00111097
+PHY-3002 : Step(215): len = 1774, overlap = 3
+PHY-3002 : Step(216): len = 1773.4, overlap = 3
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.008442s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-3001 : Run with size of 2
+PHY-3001 : Cell area utilization is 0%, beta_incr = 0.998224
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(217): len = 2511.1, overlap = 0
+PHY-3002 : Step(218): len = 2188.4, overlap = 2
+PHY-3002 : Step(219): len = 1964.1, overlap = 3.5
+PHY-3002 : Step(220): len = 1850.9, overlap = 3.5
+PHY-3002 : Step(221): len = 1819, overlap = 3.75
+PHY-3002 : Step(222): len = 1802.1, overlap = 3.75
+PHY-3001 : :::1::: Try harder cell spreading with beta_ = 0.00138953
+PHY-3002 : Step(223): len = 1789.3, overlap = 3.75
+PHY-3002 : Step(224): len = 1789.3, overlap = 3.75
+PHY-3001 : :::2::: Try harder cell spreading with beta_ = 0.00277905
+PHY-3002 : Step(225): len = 1784.5, overlap = 3.75
+PHY-3002 : Step(226): len = 1784.5, overlap = 3.75
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.004646s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-3001 : Legalized: Len = 2498.6, Over = 0
+PHY-3001 : Final: Len = 2498.6, Over = 0
+PHY-3001 : Improving timing with driver duplication.
+RUN-1002 : start command "start_timer"
+TMR-5001 WARNING: No sdc constraints found while initiating timer.
+TMR-2505 : Start building timing graph for model led.
+TMR-2506 : Build timing graph completely. Port num: 4, tpin num: 263, tnet num: 90, tinst num: 36, tnode num: 326, tedge num: 443.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 18 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+RUN-1003 : finish command "place" in  1.610998s wall, 2.062500s user + 1.046875s system = 3.109375s CPU (193.0%)
+
+RUN-1004 : used memory is 736 MB, reserved memory is 752 MB, peak memory is 1304 MB
+RUN-1002 : start command "route"
+RUN-1001 : Open license file C:/Anlogic/TD4.3.815/license/Anlogic.lic
+PHY-1001 : Pin swapping for better routability
+PHY-1001 : Pin misalignment score is improved from 33 to 26
+PHY-1001 : Pin misalignment score is improved from 26 to 26
+PHY-1001 : Pin local connectivity score is improved from 5 to 0
+PHY-1001 : Pin misalignment score is improved from 27 to 27
+PHY-1001 : Pin local connectivity score is improved from 0 to 0
+PHY-1001 : End pin swap;  0.005486s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : Route runs in 8 thread(s)
+RUN-1001 : There are total 38 instances
+RUN-1001 : 14 mslices, 15 lslices, 6 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 92 nets
+RUN-1001 : 54 nets have 2 pins
+RUN-1001 : 32 nets have [3 - 5] pins
+RUN-1001 : 3 nets have [6 - 10] pins
+RUN-1001 : 2 nets have [11 - 20] pins
+RUN-1001 : 1 nets have [21 - 99] pins
+PHY-1001 : Start global routing ...
+PHY-1001 : Generate routing grids ...
+PHY-1001 : Initialize routing nets ...
+PHY-1001 : Ripup & Reroute ...
+PHY-1002 : len = 2472, over cnt = 8(0%), over = 14, worst = 3
+PHY-1002 : len = 2480, over cnt = 7(0%), over = 12, worst = 3
+PHY-1002 : len = 2504, over cnt = 7(0%), over = 10, worst = 2
+PHY-1002 : len = 2656, over cnt = 0(0%), over = 0, worst = 0
+RUN-1002 : start command "start_timer"
+TMR-5001 WARNING: No sdc constraints found while initiating timer.
+TMR-2505 : Start building timing graph for model led.
+TMR-2506 : Build timing graph completely. Port num: 4, tpin num: 263, tnet num: 90, tinst num: 36, tnode num: 326, tedge num: 443.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 18 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+PHY-1001 : Generate timing info.
+TMR-2503 : Start to update net delay, extr mode = 5.
+TMR-2504 : Update delay of 90 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 5.
+TMR-3002 : No user constraint, initiate default constraint.
+TMR-1501 : Assign derive clock DeriveClock to 38 clock pins, and constraint 63 relative nodes.
+TMR-3004 : Start mapping sdc constraints, there are 0 constraints in total.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+PHY-1001 : Optimize timing.
+PHY-1001 : End global routing;  0.069872s wall, 0.109375s user + 0.000000s system = 0.109375s CPU (156.5%)
+
+PHY-1001 : Start detail routing ...
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net CLK_IN_pad will be routed on clock mesh
+PHY-1001 : Detail Route ...
+PHY-1001 : ===== Detail Route Phase 1 =====
+PHY-1001 : Routed 1% nets.
+PHY-1001 :  0.001826s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1002 : len = 1312, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : ===== Detail Route Phase 2 =====
+PHY-1001 : Routed 15% nets.
+PHY-1001 :  0.014348s wall, 0.031250s user + 0.000000s system = 0.031250s CPU (217.8%)
+
+PHY-1002 : len = 1928, over cnt = 1(0%), over = 1, worst = 1
+PHY-1001 : ===== DR Iter 1 =====
+PHY-1001 :  0.006627s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1002 : len = 1928, over cnt = 1(0%), over = 1, worst = 1
+PHY-1001 : ===== DR Iter 2 =====
+PHY-1001 :  0.005415s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (288.5%)
+
+PHY-1002 : len = 1928, over cnt = 1(0%), over = 1, worst = 1
+PHY-1001 : ===== DR Iter 3 =====
+PHY-1001 :  0.006081s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1002 : len = 1928, over cnt = 1(0%), over = 1, worst = 1
+PHY-1001 : ===== DR Iter 4 =====
+PHY-1001 :  0.006031s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (259.1%)
+
+PHY-1002 : len = 1928, over cnt = 1(0%), over = 1, worst = 1
+PHY-1001 : ===== DR Iter 5 =====
+PHY-1001 :  0.008011s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1002 : len = 1928, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : ===== Detail Route Phase 3 =====
+PHY-1001 : Routed 46% nets.
+PHY-1001 : Routed 48% nets.
+PHY-1001 : Routed 56% nets.
+PHY-1001 : Routed 63% nets.
+PHY-1001 : Routed 84% nets.
+PHY-1001 :  0.103539s wall, 0.109375s user + 0.015625s system = 0.125000s CPU (120.7%)
+
+PHY-1002 : len = 5104, over cnt = 0(0%), over = 0, worst = 0
+PHY-1003 : Routed, final wirelength = 5104
+PHY-1001 : 0 feed throughs used by 0 nets
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net CLK_IN_pad will be routed on clock mesh
+PHY-1001 : eco open net = 0
+PHY-1001 : End detail routing;  2.593263s wall, 2.359375s user + 0.343750s system = 2.703125s CPU (104.2%)
+
+PHY-1001 : Routing violations:
+PHY-1001 : End of Routing Violations.
+RUN-1003 : finish command "route" in  2.747283s wall, 2.546875s user + 0.343750s system = 2.890625s CPU (105.2%)
+
+RUN-1004 : used memory is 789 MB, reserved memory is 794 MB, peak memory is 1304 MB
+RUN-1002 : start command "report_area -io_info -file multiboot_phy.area"
+RUN-1001 : standard
+IO Statistics
+#IO                     6
+  #input                3
+  #output               3
+  #inout                0
+
+Utilization Statistics
+#lut                   39   out of  19600    0.20%
+#reg                   30   out of  19600    0.15%
+#le                    56
+  #lut only            26   out of     56   46.43%
+  #reg only            17   out of     56   30.36%
+  #lut&reg             13   out of     56   23.21%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                    6   out of    121    4.96%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    0   out of      4    0.00%
+#clknet                 1   out of     16    6.25%
+  #gclk                 0
+
+RUN-1002 : start command "export_db multiboot_pr.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "write_verilog sch_pr.v -sch"
+HDL-1201 : write out verilog file sch_pr.v
+RUN-1002 : start command "bitgen -bit multiboot.bit -version 0X00 -g ucode:00000000000000000000000000000000"
+BIT-1003 : Start to generate bitstream. 
+BIT-1002 : Init instances with 8 threads.
+BIT-1002 : Init instances completely, inst num: 38
+BIT-1002 : Init pips with 8 threads.
+BIT-1002 : Init pips completely, net num: 92, pip num: 506
+BIT-1003 : Multithreading accelaration with 8 threads.
+BIT-1003 : Generate bitstream completely, there are 119 valid insts, and 1506 bits set as '1'.
+BIT-1004 : PLL setting string = 0000
+BIT-1004 : Generate bits file multiboot.bit.
+RUN-1002 : start command "download -bit C:\Users\SalieriNUC\Desktop\Github-salieri\SparkRoad-bootloader\multiboot\multiboot\multiboot.bit -mode program_spi -v -wait 60 -spd 6 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_QFN88
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_QFN88 -m program_spi -bit C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/multiboot/multiboot/multiboot.bit"
+RUN-1003 : finish command "bit_to_vec -chip EAGLE_S20_QFN88 -m program_spi -bit C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/multiboot/multiboot/multiboot.bit" in  4.355376s wall, 4.250000s user + 0.109375s system = 4.359375s CPU (100.1%)
+
+RUN-1004 : used memory is 648 MB, reserved memory is 637 MB, peak memory is 1304 MB
+RUN-1002 : start command "program_spi -cable 0 -spd 6"
+RUN-1003 : finish command "program_spi -cable 0 -spd 6" in  107.322946s wall, 3.359375s user + 0.500000s system = 3.859375s CPU (3.6%)
+
+RUN-1004 : used memory is 648 MB, reserved memory is 638 MB, peak memory is 1304 MB
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_QFN88 -m verify_spi -bit C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/multiboot/multiboot/multiboot.bit"
+RUN-1002 : start command "program -cable 0 -spd 6"
+RUN-1003 : finish command "program -cable 0 -spd 6" in  6.443812s wall, 0.187500s user + 0.031250s system = 0.218750s CPU (3.4%)
+
+RUN-1004 : used memory is 452 MB, reserved memory is 440 MB, peak memory is 1304 MB
+RUN-1002 : start command "program -cable 0 -spd 1"
+RUN-1003 : finish command "download -bit C:\Users\SalieriNUC\Desktop\Github-salieri\SparkRoad-bootloader\multiboot\multiboot\multiboot.bit -mode program_spi -v -wait 60 -spd 6 -sec 64 -cable 0" in  119.301782s wall, 8.687500s user + 0.718750s system = 9.406250s CPU (7.9%)
+
+RUN-1004 : used memory is 406 MB, reserved memory is 396 MB, peak memory is 1304 MB
+GUI-1001 : Download success!
+RUN-1002 : start command "download -bit C:\Users\SalieriNUC\Desktop\Github-salieri\SparkRoad-bootloader\RISC-V\hardware\Picorv32\Picorv32.bit -mode multi_boot -v -start_addr 0x0A0000 -spd 6 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_QFN88
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_QFN88 -m multi_boot -bit C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/RISC-V/hardware/Picorv32/Picorv32.bit -start_addr 0A0000"
+RUN-1003 : finish command "bit_to_vec -chip EAGLE_S20_QFN88 -m multi_boot -bit C:/Users/SalieriNUC/Desktop/Github-salieri/SparkRoad-bootloader/RISC-V/hardware/Picorv32/Picorv32.bit -start_addr 0A0000" in  5.291141s wall, 5.000000s user + 0.281250s system = 5.281250s CPU (99.8%)
+
+RUN-1004 : used memory is 1308 MB, reserved memory is 1328 MB, peak memory is 1318 MB
+RUN-1002 : start command "program_spi -cable 0 -spd 6 -start_addr 0A0000"
+RUN-1003 : finish command "program_spi -cable 0 -spd 6 -start_addr 0A0000" in  108.765711s wall, 3.343750s user + 0.406250s system = 3.750000s CPU (3.4%)
+
+RUN-1004 : used memory is 1012 MB, reserved memory is 1020 MB, peak memory is 1318 MB
+PRG-2015 : Start to verify spi...
+RUN-1002 : start command "program -cable 0 -spd 6"
+RUN-1003 : finish command "program -cable 0 -spd 6" in  6.467416s wall, 0.218750s user + 0.015625s system = 0.234375s CPU (3.6%)
+
+RUN-1004 : used memory is 1054 MB, reserved memory is 1062 MB, peak memory is 1318 MB
+RUN-1002 : start command "program -cable 0"
+RUN-1003 : finish command "download -bit C:\Users\SalieriNUC\Desktop\Github-salieri\SparkRoad-bootloader\RISC-V\hardware\Picorv32\Picorv32.bit -mode multi_boot -v -start_addr 0x0A0000 -spd 6 -cable 0" in  121.140790s wall, 8.984375s user + 0.765625s system = 9.750000s CPU (8.0%)
+
+RUN-1004 : used memory is 1013 MB, reserved memory is 1020 MB, peak memory is 1318 MB
+GUI-1001 : Download success!
